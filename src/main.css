@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-input {
+    @apply text-gray-700 font-medium pl-2 pb-2 h-8 w-full bg-transparent mt-3 border-solid border-b-2 border-gray-300 outline-none;
+}
+.section-pages {
+    @apply relative cursor-pointer pl-6 h-12 w-full bg-gray-900 bg-opacity-80 flex items-center justify-start text-white text-lg before:w-1 before:h-full before:bg-white before:absolute before:left-0 before:opacity-0 hover:bg-opacity-80 hover:before:opacity-100;
+}
+.password-card {
+    @apply w-full h-16 my-4 bg-gray-100 rounded-lg flex items-center justify-around p-4 cursor-pointer;
+}
+.card-h2-1{
+    @apply font-medium text-gray-800 text-xl w-1/5;
+}
+.card-h2-2{
+    @apply font-medium text-gray-800;
+}
+.card-span-1{
+    @apply flex flex-col justify-center items-center w-1/5;
+}
+.card-span-2{
+    @apply flex gap-4 items-center justify-center w-2/5;
+}
+.card-p-1{
+    @apply font-normal text-gray-900;
+}
+.card-input{
+    @apply font-bold text-lg text-gray-800 bg-transparent outline-none border-none text-center;
+}
+.filter-item {
+    @apply p-1 cursor-pointer;
+}
+.checkBox {
+    @apply w-6 h-6 border-solid border-gray-700 border-2 rounded-sm flex justify-center items-center text-gray-700 text-lg;
+}

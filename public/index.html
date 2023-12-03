@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>password saver</title>
+    <title>Password Saver</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <form class="regForm" action="">
-            <input type="text" placeholder="login" id="login">
-            <input type="password" placeholder="password" id="password">
-
-            <button type="submit">submit</button>
+    <div class="bg-gray-900 h-screen w-full flex justify-center items-center">
+        <form class="w-80 bg-white p-5 flex flex-col justify-center items-center rounded-lg shadow-sm shadow-white" id="form">
+            <input class="form-input" placeholder="login" type="text" id="login" name="login">
+            <input class="form-input" type="password" placeholder="password" id="password" name="password">
+            
+            <button class="h-8 text-white font-medium bg-gray-700 w-full rounded-sm mt-3 hover:shadow-gray-300 hover:shadow-sm transition-all" type="submit">submit</button>
+            <p class="text-gray-700 mt-4 w-full text-sm text-right font-medium" id="log-quest">Вже зареєстровані? <span class="cursor-pointer text-gray-500 border-solid border-gray-500 border-b-2" id="change-log">Увійти</span></p>
+            <p class="text-gray-700 mt-4 w-full text-sm text-right font-medium hidden" id="reg-quest">Хочете зареєструватись? <span class="cursor-pointer text-gray-500 border-solid border-gray-500 border-b-2" id="change-reg">Реєстрація</span></p>
         </form>
     </div>
 
